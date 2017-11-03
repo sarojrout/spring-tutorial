@@ -8,10 +8,10 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,12 +28,11 @@ import com.saroj.tutorial.service.EmployeeService;
  */
 @RestController
 @RequestMapping("/tutorial")
-@EnableAutoConfiguration()
 public class EmployeeController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
 
 	@Autowired
-	EmployeeService empService;
+    EmployeeService empService;
 
 	@RequestMapping(value = "/employee", method = { RequestMethod.POST }, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<MyResponse> addEmployee(@RequestBody Employee employee) {
@@ -55,6 +54,12 @@ public class EmployeeController {
 	public List<Employee> getEmployeeFirstName(@RequestParam String firstName) {
 		LOGGER.info("get the employee details");
 		return empService.getEmployeeByFirstName(firstName);		
+	}
+	
+	@RequestMapping(value = "/employee/{id}", method = { RequestMethod.GET }, produces = MediaType.APPLICATION_JSON_VALUE)
+	public Employee getEmployeeById(@PathVariable String id) {
+		LOGGER.info("get the employee details using empId");
+		return empService.getEmployeeById(id);		
 	}
 
 }

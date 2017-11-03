@@ -22,7 +22,8 @@
             <pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
     </appender>
-    <root level="info">
+    <!-- <logger name="org.springframework" level="debug" /> -->
+    <root level="debug">
         <appender-ref ref="consoleAppender" />
         <appender-ref ref="FILE"/>
     </root>
