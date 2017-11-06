@@ -61,5 +61,10 @@ public class EmployeeController {
 		LOGGER.info("get the employee details using empId");
 		return empService.getEmployeeById(id);		
 	}
+	
+	@RequestMapping(value = "/employee", method = { RequestMethod.DELETE }, produces = MediaType.APPLICATION_JSON_VALUE)
+	public void deleteEmployee(@RequestBody Employee emp) {
+		empService.delete(emp);
+	}
 
 }
