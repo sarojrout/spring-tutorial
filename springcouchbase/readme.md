@@ -39,4 +39,4 @@ java -jar java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT
 ```
 ## Access the End points
 
-Visit the [Wiki](spring-couchbase) for accessing different end points
+Visit the [Wiki](https://github.com/sarojrout/spring-tutorial/wiki/spring-couchbase) for accessing different end points
