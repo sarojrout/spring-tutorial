@@ -30,13 +30,13 @@ mvn clean install
 ```
 Go the /springcouchbase/target folder
 For Dev:
-java -jar java -jar -Dspring.profiles.active=dev springcouchbase-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=dev springcouchbase-0.0.1-SNAPSHOT.jar
 
 For QA:
-java -jar java -jar -Dspring.profiles.active=qa springcouchbase-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=qa springcouchbase-0.0.1-SNAPSHOT.jar
 
 For Prod:
-java -jar java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT.jar
 ```
 ## Access the End points
 
