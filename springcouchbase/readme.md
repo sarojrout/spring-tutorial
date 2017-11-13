@@ -34,6 +34,7 @@ java -jar java -jar -Dspring.profiles.active=dev springcouchbase-0.0.1-SNAPSHOT.
 
 For QA:
 java -jar java -jar -Dspring.profiles.active=qa springcouchbase-0.0.1-SNAPSHOT.jar
+
 For Prod:
 java -jar java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT.jar
 ```

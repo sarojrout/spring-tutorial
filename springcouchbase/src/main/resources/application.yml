@@ -18,4 +18,13 @@ spring:
  
 couchbasehost: 10.23.34.210
 bucketname: student
-password: testme123  
+password:
+
+---
+
+spring:
+  profiles: prod
+ 
+couchbasehost: 10.23.34.210
+bucketname: student
+password:   
