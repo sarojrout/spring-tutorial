@@ -2,7 +2,7 @@ package com.example.springcouchbase.service;
 
 import java.util.List;
 
-import com.example.springcouchbase.Student;
+import com.example.springcouchbase.entity.Student;
 
 public interface StudentService {
 	

@@ -1,4 +1,4 @@
-package com.example.springcouchbase;
+package com.example.springcouchbase.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
