@@ -18,14 +18,14 @@ This is my sample spring boot project which has exposed few rest end points and 
 3. Maven
 4. Couchbase 4.6
 
-* How to Build the project?
+## How to Build the project?
 
 ```
 Go to the project folder /springcouchbase
 mvn clean install
 ```
 
-* How to run the project?
+## How to run the project?
 
 ```
 Go the /springcouchbase/target folder
@@ -37,6 +37,6 @@ java -jar java -jar -Dspring.profiles.active=qa springcouchbase-0.0.1-SNAPSHOT.j
 For Prod:
 java -jar java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT.jar
 ```
-* Access the Application
+## Access the End points
 
 Visit the [Wiki](spring-couchbase) for accessing different end points
