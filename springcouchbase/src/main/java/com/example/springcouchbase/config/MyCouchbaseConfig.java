@@ -30,9 +30,9 @@ public class MyCouchbaseConfig extends AbstractCouchbaseConfiguration {
 	protected String getBucketPassword() {
 		return env.getProperty("password");
 	}
-//	@Override
-//	public String typeKey() {
-//	    // use "javaClass" instead of "_class"
-//	    return MappingCouchbaseConverter.TYPEKEY_SYNCGATEWAY_COMPATIBLE;
-//	}
+	@Override
+	public String typeKey() {
+	    // use "javaClass" instead of "_class"
+	    return "class";
+	}
 }

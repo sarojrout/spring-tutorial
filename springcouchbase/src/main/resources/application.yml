@@ -27,4 +27,4 @@ spring:
  
 couchbasehost: 10.23.34.210
 bucketname: student
-password:   
+password:
