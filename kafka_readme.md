@@ -172,9 +172,10 @@ kafka-topics.bat --delete --zookeeper localhost:2181 --topic <topic_name>
 ```
 kafka-topics.bat --zookeeper localhost:2181 --alter --topic <topic-name> --partitions 4
 ```
+Example:
 
 ```
-kafka-topics.bat --zookeeper localhost:2181 --alter --topic demo-topic --partitions 4
+kafka-topics.bat --zookeeper localhost:2181 --alter --topic my-topic --partitions 4
 ```
 
 **For MAC**  
@@ -183,7 +184,8 @@ kafka-topics.bat --zookeeper localhost:2181 --alter --topic demo-topic --partiti
 Go to /bin and then execute the below
 ./kafka-topics.sh --zookeeper localhost:2181 --alter --topic <topic-name> --partitions 4
 ```
+Example:
 
 ```
-./kafka-topics.sh --zookeeper localhost:2181 --alter --topic demo-topic --partitions 4
+./kafka-topics.sh --zookeeper localhost:2181 --alter --topic my-topic --partitions 4
 ```
