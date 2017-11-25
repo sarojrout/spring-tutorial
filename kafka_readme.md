@@ -7,7 +7,7 @@ Get it from here https://kafka.apache.org/downloads
 
 ```
 Go to /bin and then execute the below
-> ./zookeeper-server-start.sh config/zookeeper.properties
+> ./zookeeper-server-start.sh ../config/zookeeper.properties
 ```
 **For Windows**
 
@@ -20,7 +20,7 @@ Go to \bin\windows and then execute the below
 
 ```
 Go to /bin and then execute the below
-> ./kafka-server-start.sh config/server.properties
+> ./kafka-server-start.sh ../config/server.properties
 ```
 
 **For Windows**
@@ -36,7 +36,7 @@ create a topic named "my-topic" with a single partition and only one replica
 
 ```
 Go to /bin and then execute the below
-> bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic my-topic
+> ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic my-topic
 ```
 
 **For Windows**
