@@ -9,5 +9,6 @@
   <modules>
     <module>springboot</module>
     <module>springcouchbase</module>
+    <module>samplekafka</module>
   </modules>
 </project>
