@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+  
+couchbasehost: localhost
+bucketname: student
+password:
+kafka.broker: localhost:9092
+enable.auto.commit: false
+auto.commit.interval.ms: 100
+group.id: group1
+kafka.auto.offset.reset: earliest
+kafka.topics: student-event1
+
+---
+
+spring:
+  profiles: qa
+ 
+couchbasehost: 10.23.34.210
+bucketname: student
+password:
+
+---
+
+spring:
+  profiles: prod
+ 
+couchbasehost: 10.23.34.210
+bucketname: student
+password:
