@@ -28,15 +28,15 @@ mvn clean install
 ## How to run the project?
 
 ```
-Go the /springcouchbase/target folder
+Start zookeeper node by following the [kafka_readme](https://github.com/sarojrout/spring-tutorial/blob/master/kafka_readme.md)
+Start kafka broker by following the [kafka_readme](https://github.com/sarojrout/spring-tutorial/blob/master/kafka_readme.md)
+Create your topic by following the [kafka_readme](https://github.com/sarojrout/spring-tutorial/blob/master/kafka_readme.md)
+Update your topic name in the resources/application.yml file
+
+Go the /springcouchbaseafkak/target folder
 For Dev:
-java -jar -Dspring.profiles.active=dev springcouchbase-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=dev springcouchbasekafka-0.0.1-SNAPSHOT.jar
 
-For QA:
-java -jar -Dspring.profiles.active=qa springcouchbase-0.0.1-SNAPSHOT.jar
-
-For Prod:
-java -jar -Dspring.profiles.active=prod springcouchbase-0.0.1-SNAPSHOT.jar
 ```
 ## Access the End points
 
