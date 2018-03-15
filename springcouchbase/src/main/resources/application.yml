@@ -5,20 +5,18 @@ spring:
 ---
 
 spring:
-  profiles: dev
-  
+  profiles: dev  
 couchbasehost: localhost
 bucketname: student
-password:
+password: password123
 
 ---
 
 spring:
   profiles: qa
- 
 couchbasehost: 10.23.34.210
 bucketname: student
-password:
+password: password123
 
 ---
 
