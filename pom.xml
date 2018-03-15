@@ -8,7 +8,12 @@
   <name>sarojtutorial</name>
   <modules>
     <module>springboot</module>
+<<<<<<< HEAD
     <module>springbootcouchbase</module>
     <module>springcouchbase</module>
+=======
+    <module>springcouchbase</module>
+    <module>samplekafka</module>
+>>>>>>> 327e44a35d3ec760b88e0c7f8c7df1a63f974c74
   </modules>
 </project>
