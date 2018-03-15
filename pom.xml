@@ -9,5 +9,6 @@
   <modules>
     <module>springboot</module>
     <module>springbootcouchbase</module>
+    <module>springcouchbase</module>
   </modules>
 </project>
