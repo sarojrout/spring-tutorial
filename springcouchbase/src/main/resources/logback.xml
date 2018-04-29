@@ -8,14 +8,15 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/Users/sarojkumarrout/springtut1/tut1_%d{yyyy-MM-dd}.%i.log</fileNamePattern> -->
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>1MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-            <!-- keep 5 days' worth of history -->
-            <maxHistory>1</maxHistory>
+        <file>logs/student.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>logs/student-%i.log.gz</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>2</maxIndex>
         </rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
 
         <encoder>
             <charset>UTF-8</charset>
