@@ -6,7 +6,9 @@ package com.saroj.tutorial.config;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
 import org.springframework.data.couchbase.core.convert.MappingCouchbaseConverter;
 import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepositories;
@@ -19,6 +21,9 @@ import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepos
 @EnableCouchbaseRepositories(basePackages={"com.saroj.tutorial"})
 public class MyCouchbaseConfig extends AbstractCouchbaseConfiguration {
 
+	@Autowired
+	Environment env;
+	
 	@Override
 	protected List<String> getBootstrapHosts() {
 		return Arrays.asList("localhost");
@@ -26,12 +31,12 @@ public class MyCouchbaseConfig extends AbstractCouchbaseConfiguration {
 
 	@Override
 	protected String getBucketName() {
-		return "employee";
+		return env.getProperty("bucketname");
 	}
 
 	@Override
 	protected String getBucketPassword() {
-		return "";
+		return env.getProperty("password");
 	}
 	@Override
 	public String typeKey() {

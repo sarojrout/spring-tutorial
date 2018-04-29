@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev  
+couchbasehost: localhost
+bucketname: employee
+password: password1
+
+---
+
+spring:
+  profiles: qa
+couchbasehost: 10.23.34.210
+bucketname: student
+password: password123
+
+---
+
+spring:
+  profiles: prod
+ 
+couchbasehost: 10.23.34.210
+bucketname: student
+password:
