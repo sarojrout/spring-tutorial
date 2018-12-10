@@ -127,13 +127,13 @@ Example :
 **For Windows**
 
 ```
-kafka-console-producer.bat --broker-list localhost:9092 --topic <topic-name>
+kafka-console-producer.bat --bootstrap-server localhost:9092  --topic <topic name> --group test --from-beginning
 ```
 
 Example:  
 
 ```
-kafka-console-consumer.bat --zookeeper localhost:2181 --topic my-topic --from-beginning.
+kafka-console-consumer.bat --bootstrap-server localhost:9092  --topic my-topic --group test --from-beginning
 
 ```
 
@@ -141,7 +141,7 @@ kafka-console-consumer.bat --zookeeper localhost:2181 --topic my-topic --from-be
  
 ```
 Go to /bin and then execute the below
-./kafka-console-consumer.sh --zookeeper localhost:2181 --topic <topic-name> --from-beginning
+./kafka-console-consumer.sh --bootstrap-server localhost:9092  --topic my-topic --group test --from-beginning
 ```
 
 Example:  
